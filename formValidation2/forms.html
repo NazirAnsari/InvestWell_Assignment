@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Registration Form</h1>
+    <form action="/my.php" name="myform" onsubmit="submitForm(event)">
+     <div class="classForm" id="name">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+        Name : <input type="text" name="Fname" class="changeInput" required> <b><span class="printValid"></b></span>
+     </div>
+     <div class="classForm" id="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Email : <input type="text" name="Femail" class="changeInput" required> <b><span class="printValid"></b></span>
+     </div>
+     <div class="classForm" id="number">
+        Mobile No. : <input type="number" name="Fnumber" class="changeInput" required> <b><span class="printValid"></b></span>
+     </div>
+     <div class="classForm" id="password"> &nbsp;&nbsp;
+        Password : <input type="password" name="Fpassword" class="changeInput" required> <b><span class="printValid"></b></span>
+     </div>
+     <div class="classForm" name="gender">
+        Gender : <input type="radio" name="g" value="male">Male 
+        <input type="radio" name="g" value="female">Female
+        <input type="radio" name="g" value="others">Others
+     </div>
+
+     <div>
+        <p id="target"></p>
+     </div>
+
+     <input type="Submit" name="" id="btn" >
+     <input type="reset" id="btn">
+     <!-- <button id="btn" onclick="clearTable()">Clear</button> -->
+    </form>
+
+   
+
+    <!-- <div class="container">
+        <form id="login-form" onsubmit="submitForm(event)">
+             <h2>Input your Credentail to login</h2>
+ 
+             <div class="form-group">
+                  <label for="username">Username:</label>
+                  <input type="text" id="username" name="username" required>
+                  </div>
+             <div class="form-group">
+                 <label for="password">Password:</label>
+                 <input type="password" id="password" name="password" required>
+                </div>
+              <button type="submit">Submit</button>
+              </form>
+         </div> -->
+
+          <table id="registrationTable" border="2">
+        <tr>
+            <th>Unique Id</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Mobile No.</th>
+            <th>Password</th>
+            <th>Gender</th>
+        </tr>
+        <p class="userC"><b>Total Registration </b>  <span id="user"><b> 0</b> </span></p>
+        <tbody id="display"></tbody>
+    </table>
+
+    <script src="fom.js">
+
+       
+    </script>
+</body>
+</html>

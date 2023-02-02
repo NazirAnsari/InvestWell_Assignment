@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In page</title>
+</head>
+  <style>
+   .container {
+    width: 500px;
+    margin:  0 auto;
+    text-align: center;
+  }
+  
+  #login-form {
+    margin-top: 180px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+  }
+  
+  .form-group {
+    margin: 20px 0;
+  }
+  
+  label {
+    display: inline;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"], input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+        </style>                                                      
+<body>
+    <div class="container">
+       <form id="login-form">
+            <h2>Input your Credentail to login</h2>
+
+            <div class="form-group">
+                 <label for="username">Username:</label>
+                 <input type="text" id="username" name="username" required>
+                 </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+               </div>
+             <button type="submit">Submit</button>
+             </form>
+        </div>
+     
+    <script src="login.js"></script>
+    
+</body>
+</html>

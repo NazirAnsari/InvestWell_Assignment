@@ -1,0 +1,91 @@
+body{
+    margin: auto;
+}
+.classForm{
+    margin: 12px 20px;
+}
+
+#btn{
+    padding: 5px;
+    position: relative;
+    left: 5%;
+    margin-bottom: 10px;
+}
+
+.printValid{
+    color: red;
+  
+}
+
+form{
+    margin-top: 10px;
+    padding-top: 10px;
+    width: 70%;
+    height: auto;
+    /* background-color: skyblue; */
+
+    margin: auto;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px 4px rgb(199, 128, 128);
+
+}
+
+table{
+    margin: auto;
+    width: 50%;
+    margin-top: 50px;
+}
+
+.changeInput{
+    width: 50%;
+}
+
+td{
+    width: 500px;
+    text-align: center;
+}
+
+.userC,  .userC span{
+    text-align: center;
+    font-size: 10;
+    font-weight: 100;
+}
+/* .container {
+width: 500px;
+margin:  0 auto;
+text-align: center;
+}
+
+#login-form {
+margin-top: 180px;
+padding: 20px;
+background-color: #f2f2f2;
+border-radius: 10px;
+}
+
+.form-group {
+margin: 20px 0;
+}
+
+label {
+display: inline;
+margin-bottom: 10px;
+font-weight: bold;
+}
+
+input[type="text"], input[type="password"] {
+width: 80%;
+padding: 10px;
+margin-bottom: 20px;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+padding: 10px 20px;
+background-color: #4CAF50;
+color: white;
+border-radius: 5px;
+border: none;
+cursor: pointer;
+} */

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <h1>This is Html Page</h1>
+    <form onsubmit="submitForm(event)">
+    <!-- onsubmit() return submitForm () tb tk form submit mt krna jb tk return true na ho -->
+        <label for="fname">name : </label>
+        <input type="text" id="fname">
+
+        <label for="fLname">Lname : </label>
+        <input type="text" id="fLname">
+
+        <input type="submit" >
+    </form>
+
+    <script>
+        
+        function submitForm(event){
+            // var isSubmitValid=true;
+            event.preventDefault(); //auto submit vala jo fiture tha o bnd ho gya yha pe like url dekho ? mark nhi aya;
+
+            var finame=document.getElementById('fname').value;
+            console.log(finame);
+
+            var laname=document.getElementById('fLname').value;
+            console.log(laname);
+
+            //return false;
+        }
+    </script>
+</body>
+</html>
